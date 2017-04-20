@@ -1,0 +1,18 @@
+---
+- name: Creates directory for NumPy source files
+  file: "path={{numpy_path}} state=directory"
+
+- stat: "path={{numpy_path}}/numpy-{{numpy_version}}"
+  register: numpy_home
+
+- name: Download and unarhive NumPy tarball from GitHub
+  unarchive:
+    src: "https://github.com/numpy/numpy/archive/v{{numpy_version}}.tar.gz"
+    dest: "{{numpy_path}}"
+    remote_src: True
+  when: numpy_home.stat.exists == False
+
+- name: Copy NumPy config with OpenBLAS settings
+  copy:
+    src: ./files/site.cfg
+    dest: "{{numpy_path}}/numpy-{{numpy_version}}"

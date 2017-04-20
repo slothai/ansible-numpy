@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Kirill Pavlov <k@p99.io>
+  description: NumPy with OpenBLAS installation from source
+  min_ansible_version: 2.2
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+  - system
+
+dependencies:
+  - { role: slothai.openblas }

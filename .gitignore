@@ -1,0 +1,4 @@
+.vagrant/
+test.retry
+inventory
+roles/
