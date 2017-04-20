@@ -15,4 +15,4 @@ galaxy_info:
   - system
 
 dependencies:
-  - { role: slothai.openblas }
+  - src: slothai.openblas

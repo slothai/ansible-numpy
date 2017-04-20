@@ -1,7 +1,7 @@
 # Ansible OpenBLAS installation from source
 
 [![Build Status](https://travis-ci.org/slothai/ansible-numpy.svg?branch=master)](https://travis-ci.org/slothai/ansible-numpy)
-[![Ansible Galaxy](https://img.shields.io/ansible/role/<id>.svg)](https://galaxy.ansible.com/slothai/numpy/)
+[![Ansible Galaxy](https://img.shields.io/ansible/role/17178.svg)](https://galaxy.ansible.com/slothai/numpy/)
 
 This role installs and configures [NumPy](http://www.numpy.org/) with [OpenBLAS](http://www.openblas.net/).
 
